@@ -23,5 +23,22 @@ public class Prime10001 {
             System.out.println(i);
         System.out.println();
         System.out.println("The " + n + " prime number is " + pncalc.primelist.get(n - 1));
+
+
+
+    CheckPrimeCalc(new PrimeNumberCalculator());
+    CheckPrimeCalc(new PrimeNumbersEratosph());
+
+
+
+}
+
+
+    private static void CheckPrimeCalc(IPrimeNumbers pncalc)
+    {
+        pncalc.findPrimeNumbers(100);
+        ArrayList<Integer> list = pncalc.getPrimeList();
+        for (int i : list)
+            System.out.println(i);
     }
 }
